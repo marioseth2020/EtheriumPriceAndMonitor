@@ -1,0 +1,142 @@
+body {
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  color: #3E4552;
+  background: #F4F7FA;
+  padding: 30px;
+  border-top: 1px solid #212121;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.subtitle {
+ 
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.price-container {
+  padding-top: 2px;
+  
+}
+
+.price {
+  font-size: 20px;
+  
+}
+
+
+.percentage {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.row {
+  width:100%;
+  display: flex;
+  justify-content:center;  
+  margin: 0;
+  margin-bottom: 10px;
+  
+}
+
+.price-icons-container {
+  flex: 1;
+  width: 10px;
+  padding-top: 21px;
+  padding-left: 10px;
+}
+
+.icon-up {
+  display: block;
+  visibility: hidden;
+  color: green;
+}
+
+.icon-down {
+  display: block;
+  visibility: hidden;
+  color: red;
+}
+
+.extra-info {
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.extra-info span {
+  padding-left: 3px;
+}
+
+.extra-info-left {
+  float: left;
+  width: 33%;
+}
+
+.extra-info-center {
+  float: center;
+  width: 33%;
+  text-align: right;
+}
+
+.extra-info-right {
+  float: right;
+  width: 33%;
+  text-align: right;
+}
+
+.options-container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align:center;
+}
+
+.input-container {
+  width: 80px;
+  height: 20px;
+  float: left;
+  text-align: center;
+  background-color: #F4F7FA;
+  margin-right: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  display: block;
+  border-top: 1px solid #212121;
+  cursor:pointer;
+ 
+}
+
+.border {
+  border-radius: 12px;
+  
+ 
+}
+
+input[type="radio"]:checked + label {
+  background-color: #cbe4fd;
+  
+}
+
+label:hover  {
+  background-color: #d3d4d4;
+  
+}

@@ -1,0 +1,31 @@
+{
+   "background": {
+    "persistent": true,
+    "page": "src/bg/background.html"
+   },
+   "browser_action": {
+      "default_icon": "icons/icon@19.png",
+      "default_popup": "src/browser_action/browser_action.html",
+      "default_title": "ETH price and monitor"
+   },
+   "description": "Current ETH price on the badge icon.",
+   "icons": {
+      "128": "icons/icon@128.png",
+      "16": "icons/icon@16.png",
+      "48": "icons/icon@48.png"
+   },
+   
+   "content_scripts": [
+   {
+     "matches": ["*://*/*"],
+     "js": ["js/jquery-3.1.1.slim.min.js", "js/jquery-3.2.1.min.js", "js/ether.js"],
+	 "run_at": "document_end"	 
+   }
+ ],
+   
+   "manifest_version": 2,
+   "name": "Ethereum price and monitor",
+   "content_security_policy":"script-src 'self' https://etherpricemonitor.online; object-src 'self'",
+   "permissions": [ "https://api.kraken.com/", "activeTab","https://etherpricemonitor.online/*" ], 
+   "version": "1.0"
+}
